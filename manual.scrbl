@@ -20,7 +20,7 @@ Trek, The Next Generation}.
 (date->stardate (current-date))]
 
 Note: this package has not yet been reviewed by the Starfleet Corps of
-Engineers for is accuracy, and should not be be used for galactic
+Engineers for its accuracy, and should not be be used for galactic
 archival purposes.
 
 
