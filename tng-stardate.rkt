@@ -2,7 +2,7 @@
 
 (require racket/date)
 
-(provide date->stardate current-stardate)
+(provide date->stardate)
 
 ;; http://trekguide.com/Stardates.htm
 ;; http://en.memory-alpha.org/wiki/Stardate
@@ -55,10 +55,7 @@
   (define the-stardate (+ 41000 (* stardate-units-per-second (- secs the-epoch-seconds))))
   the-stardate)
 
+
 ;; stardate-string: number -> string
 (define (stardate-string a-stardate)
   (number->string (exact->inexact (/ (floor (* a-stardate 10)) 10))))
-
-(define (current-stardate)
-  (date->stardate (current-date)))
-
