@@ -1,5 +1,5 @@
 #lang scribble/manual
-@(require scribble/eval (for-label stardate))
+@(require scribble/eval (for-label stardate racket/date))
 
 @(define my-eval (make-base-eval))
 
