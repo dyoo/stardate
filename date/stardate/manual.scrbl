@@ -1,5 +1,5 @@
 #lang scribble/manual
-@(require scribble/eval (for-label main))
+@(require scribble/eval (for-label date/stardate/main))
 
 @(define my-eval (make-base-eval))
 
