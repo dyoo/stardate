@@ -1,21 +1,19 @@
 #lang scribble/manual
-@(require scribble/eval
-          planet/scribble
-          (for-label (this-package-in main)))
+@(require scribble/eval (for-label main))
 
 @(define my-eval (make-base-eval))
 
 @title{stardate: compute the current TNG stardate}
 @author+email["Danny Yoo" "dyoo@hashcollision.org"]
 
-@defmodule/this-package[main]
+@defmodule[date/stardate/main]
 
 The package computes the current stardate based on the scheme used by
 @link["http://en.wikipedia.org/wiki/Star_Trek:_The_Next_Generation"]{Star
 Trek, The Next Generation}.
 
 @interaction[#:eval my-eval
-(require (planet dyoo/stardate))
+(require date/stardate)
 (require racket/date)
 (date->stardate (current-date))]
 
