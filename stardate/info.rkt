@@ -5,7 +5,7 @@
 (define required-core-version "5.1.1")
 (define version "1.0")
 (define repositories '("4.x"))
-(define scribblings '(("manual.scrbl")))
+(define scribblings '(("stardate.scrbl")))
 (define primary-file "main.rkt")
 (define blurb 
   '("stardate: compute the current TNG stardate."))
